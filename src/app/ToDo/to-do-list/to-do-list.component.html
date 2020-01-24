@@ -1,0 +1,17 @@
+<mat-accordion multi="true" *ngIf="posts.length > 0">
+  <mat-expansion-panel *ngFor="let post of posts;let i=index">
+    <mat-expansion-panel-header>
+      <div id="d1"
+      style="
+    font-weight: 450;
+    font-size: 19px;">
+ {{post.title}}</div>
+       <button mat-stroked-button color="warn" style="
+       margin-left: 850px;
+       margin-top: -9px;"(click)="posts.splice(i,1)">delete</button>
+  </mat-expansion-panel-header>
+  <p>{{post.content}}</p>
+</mat-expansion-panel>
+</mat-accordion>
+
+

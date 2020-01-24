@@ -1,0 +1,14 @@
+<h3>Add a list...</h3>
+<hr/>
+<mat-card>
+    <mat-form-field>
+      <input matInput placeholder="Enter title here.." type="text" [(ngModel)]="enteredTitle">
+    </mat-form-field> <br><br><br>
+    <mat-form-field>
+      <textarea matInput placeholder="Enter content here.." rows="4" [(ngModel)]="enteredContent"></textarea>
+    </mat-form-field>
+    <button mat-fab
+      color="accent" 
+      (click)="onAddPost()">Save!</button>
+  </mat-card>
+  
